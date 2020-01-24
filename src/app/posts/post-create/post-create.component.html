@@ -1,0 +1,21 @@
+
+<hr/>
+<mat-card>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter title here" [(ngModel)]="enteredTitle">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Content</mat-label>
+        <textarea matInput placeholder="Enter Content here" rows="7" [(ngModel)]="enteredContent"></textarea>
+      </mat-form-field>
+    </p>
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="onAddList()">Save</button>
+  </mat-card>
+  
